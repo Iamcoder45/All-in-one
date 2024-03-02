@@ -148,7 +148,7 @@ def user():
       return render_template("user.html" , name = p_name , email=mail, feedback=feed)
       
 
-   flash("you need to login first")   
+   flash("you need to login first", "info")   
    return redirect("login")
 
 
