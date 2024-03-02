@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %} sign {% endblock %}
+
+{% block content  %} 
+
+<link rel="stylesheet" href="../static/feed-style.css">
+
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+{% for i in messages %}
+<p>{{i}}</p> 
+{% endfor %}
+{% endif %}
+{% endwith %}
+
+ 
+<div class="container">
+    <h2>login Form</h2>
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="nm" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="em" required>
+      
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+
+
+{% endblock %}

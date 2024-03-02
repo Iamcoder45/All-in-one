@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content  %} 
+
+<link rel="stylesheet" href="../static/feed-style.css">
+
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+{% for i in messages %}
+<p>{{i}}</p> 
+{% endfor %}
+{% endif %}
+{% endwith %}
+
+ 
+<div class="container">
+    <h2>Feedback Form</h2>
+    <form action="#" method="post">
+      
+        <label for="message">Feedback:</label>
+        <textarea id="message" name="feed" required>
+            {{hello}}
+        </textarea>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+
+
+{% endblock %}

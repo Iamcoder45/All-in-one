@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+
+{% block title %} home page {% endblock %}
+
+{% block content  %} 
+
+<link rel="stylesheet" href="../static/weather.css">
+
+<body>
+<header>
+<h1>weather Search</h1>
+</header>
+<main>
+<form id="search-form" action="#" method="post">
+
+<input type="text" id="search-input" placeholder="Search for foods..." name="search">
+<button type="submit">Search</button>
+</form>
+
+
+</main>
+<footer>
+<p>&copy; 2024 Food and Nutrition Search</p>
+</footer>
+
+</body>
+
+
+{% endblock %}

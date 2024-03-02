@@ -1,0 +1,150 @@
+{% extends "base.html" %}
+
+{% block title %} home page {% endblock %}
+
+{% block content  %} 
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+
+    header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .container {
+        max-width: 1650px;
+        margin: 20px auto;
+        padding: 0 20px;
+    }
+
+    h1 {
+        margin-top: 0;
+    }
+
+    .card {
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .card h2 {
+        margin-top: 0;
+    }
+
+    .card p {
+        margin: 10px 0;
+    }
+
+    .button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #333;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    .button:hover {
+        background-color: #555;
+    }
+</style>
+
+
+
+
+
+<body>
+    <!-- <header>
+        <h1>weather details for {{city}}</h1>
+    </header> -->
+    <div class="container">
+        <div class="card">
+            <h2>The Ultimate Hub for Fun and Functionality</h2>
+            <p>Imagine a website that's not just a one-trick pony but a versatile platform offering a 
+                plethora of features to entertain, inform, and engage you. Welcome to our website, your all-in-one destination for games, weather updates, internet speed 
+                checks, and even a good laugh!</p>
+            
+                <p>So, whether you're looking to relax with a game, stay informed about the weather, or simply have a
+                     laugh, our website has something for everyone. Visit us today and experience the ultimate hub for 
+                     fun and functionality!</p>
+           
+            
+        </div>
+
+        <div class="card">
+            <h2>Games Galore</h2>
+            <p>Are you a puzzle enthusiast or a word game aficionado? Look no further! Our website offers 
+                a diverse selection of games to cater to every taste. Challenge your mind with Sudoku puzzles 
+                of varying difficulty levels, or improve your typing speed and accuracy with our interactive 
+                typing games. Whether you're a seasoned gamer or just looking for a fun way to pass the time,
+                 our collection of games is sure to keep you entertained for hours on end.</p>
+
+            <p> Whether you're a Sudoku enthusiast looking to challenge your mind or a typing virtuoso honing your 
+                skills, our website has a variety of games to cater to all interests and skill levels. Dive into a 
+                Sudoku puzzle to flex your logical thinking, or test your typing speed and accuracy with our fun typing 
+                games. </p>
+          
+        </div>
+
+        <div class="card">
+            <h2>Weather Wizardry</h2>
+            <p> Stay ahead of the weather curve with our comprehensive weather feature. 
+                Simply enter the city of your choice, and instantly access up-to-date weather information,
+                 including temperature, humidity levels, and forecasts. Whether you're planning a weekend getaway or 
+                 just curious about the weather in another city, our weather tool has you covered, ensuring you're always 
+                 prepared for whatever the elements may bring. </p>
+            
+            <p> Planning a trip or just curious about the weather in another city? Our website provides up-to-date 
+                weather details for any desired location. Get the latest temperature, humidity, and forecasts at your
+                 fingertips, ensuring you're always prepared for whatever Mother Nature throws your way. </p>
+          
+        </div>
+
+        <div class="card">
+            <h2>Internet Speed Check</h2>
+            <p> Is your internet connection up to speed? Find out with our internet speed check tool. 
+                With just a click of a button, you can measure your internet speed and ensure you're getting 
+                the performance you're paying for. Whether you're streaming your favorite movies or working 
+                from home, knowing your internet speed is crucial, and our tool makes it easy to stay informed. </p>
+          
+        </div>
+
+        <div class="card">
+            <h2>Effortless Feedback</h2>
+            <p>  
+                Your feedback is invaluable to us, which is why we've made it easier than ever to share your thoughts. 
+                Our website features a voice mode for feedback, allowing you to simply speak your mind without the need 
+                for typing. Your feedback helps us improve and tailor our services to better serve you, ensuring your
+                 experience on our website is always top-notch.   
+            </p>
+          
+        </div>
+
+        <div class="card">
+            <h2>Secure Login System</h2>
+            <p>  Your privacy and security are paramount, which is why our website uses SQL Alchemy for a
+                 robust and secure login system. Rest assured that your personal information is protected,
+                  allowing you to enjoy our website with peace of mind. </p>
+          
+        </div>
+
+
+        <!-- More cards for other food items -->
+    </div>
+</body>
+
+
+
+
+
+{% endblock %}
